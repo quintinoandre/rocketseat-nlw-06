@@ -13,6 +13,7 @@
     "paths": {
       "@controllers": ["src/controllers"],
       "@entities": ["src/entities"],
+      "@middlewares": ["src/middlewares"],
       "@repositories": ["src/repositories"],
       "@routers": ["src/routers"],
       "@services": ["src/services"]

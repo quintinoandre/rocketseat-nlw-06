@@ -1,15 +1,15 @@
-import { Request, Response, NextFunction } from "express";
+import { Request, Response, NextFunction } from 'express';
 
 function authorizationMiddleware(
-  request: Request,
-  response: Response,
-  next: NextFunction
+	request: Request,
+	response: Response,
+	next: NextFunction
 ) {
-  const admin = true;
+	const admin = true;
 
-  if (admin) return next();
+	if (admin) return next();
 
-  return response.status(401).json({ error: "Unauthorized" });
+	return response.status(401).json({ error: 'Unauthorized' });
 }
 
 export { authorizationMiddleware };

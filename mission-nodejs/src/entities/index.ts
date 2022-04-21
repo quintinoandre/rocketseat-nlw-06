@@ -1,3 +1,3 @@
-export * from "./ComplimentEntity";
-export * from "./TagEntity";
-export * from "./UserEntity";
+export * from './ComplimentEntity';
+export * from './TagEntity';
+export * from './UserEntity';

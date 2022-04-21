@@ -1,1 +1,239 @@
-{"_type":"export","__export_format":4,"__export_date":"2022-04-21T16:16:30.535Z","__export_source":"insomnia.desktop.app:v2022.2.1","resources":[{"_id":"req_fbe014e6961f4294898bb50ea83f58a1","parentId":"fld_d886db28f2d0420ea8a978df4a41f8db","modified":1650557370188,"created":1650550037991,"url":"{{ _.url }}/{{ _.resource }}","name":"Login","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n\t\"email\": \"dani.leao89@gmail.com\",\n\t\"password\": \"123\"\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json","id":"pair_403b8c28d65042a5b6f28ebff7ab59c6"}],"authentication":{},"metaSortKey":0,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"fld_d886db28f2d0420ea8a978df4a41f8db","parentId":"wrk_e581900c902c479f87387be4f9ee5244","modified":1650557370178,"created":1650550100020,"name":"Authentication","description":"","environment":{"resource":"login"},"environmentPropertyOrder":{"&":["resource"]},"metaSortKey":0,"_type":"request_group"},{"_id":"wrk_e581900c902c479f87387be4f9ee5244","parentId":null,"modified":1650499001745,"created":1650499001745,"name":"rocketseat-nlw-06","description":"","scope":"collection","_type":"workspace"},{"_id":"req_f379848ee08143cfad30ae070122a1e3","parentId":"fld_0616a72d512e4f2094d031e6adffb78f","modified":1650557370188,"created":1650556700398,"url":"{{ _.url }}/{{ _.resource }}","name":"Create Compiment","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n\t\"tag_id\": \"98ce71b9-68f6-4716-bbfe-66c9ffb69618\",\n\t\"user_sender\": \"b1fe9e57-65b0-41b0-b46e-9ba84171542a\",\n\t\"user_receiver\": \"b1fe9e57-65b0-41b0-b46e-9ba841715421\",\n\t\"message\": \"Thanks for the help in the community :)\"\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json","id":"pair_f67e8919c70c4d528f9daccbb4a3da3a"}],"authentication":{},"metaSortKey":0,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"fld_0616a72d512e4f2094d031e6adffb78f","parentId":"wrk_e581900c902c479f87387be4f9ee5244","modified":1650557370178,"created":1650556676173,"name":"Compliments","description":"","environment":{"resource":"compliments"},"environmentPropertyOrder":{"&":["resource"]},"metaSortKey":100,"_type":"request_group"},{"_id":"req_fef3f7ee883f4bcbb27abbaa3cff92b3","parentId":"fld_58a0e85b2f2a46449178ee93d4e5f829","modified":1650557370189,"created":1650535114812,"url":"{{ _.url }}/{{ _.resource }}","name":"Create Tag","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n\t\"name\": \"leadership\"\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json","id":"pair_7ff777a5c2a0460582364447dd31313e"}],"authentication":{},"metaSortKey":0,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"fld_58a0e85b2f2a46449178ee93d4e5f829","parentId":"wrk_e581900c902c479f87387be4f9ee5244","modified":1650557370178,"created":1650535096138,"name":"Tags","description":"","environment":{"resource":"tags"},"environmentPropertyOrder":{"&":["resource"]},"metaSortKey":200,"_type":"request_group"},{"_id":"req_ecf83b4818c14346b6bf11546675568a","parentId":"fld_1ae4fbf4887945859efa8455061122f5","modified":1650557545306,"created":1650509320692,"url":"{{ _.url }}/{{ _.resource }}","name":"Create User","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n\t\"name\": \"Nati\",\n\t\"email\": \"nati@mail.com\",\n\t\"password\": \"123\"\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json","id":"pair_83701c3b6d5b488a95af4aa68227f708"}],"authentication":{},"metaSortKey":0,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"fld_1ae4fbf4887945859efa8455061122f5","parentId":"wrk_e581900c902c479f87387be4f9ee5244","modified":1650557370178,"created":1650509227442,"name":"Users","description":"","environment":{"resource":"users"},"environmentPropertyOrder":{"&":["resource"]},"metaSortKey":300,"_type":"request_group"},{"_id":"env_3fd169d6f3844c7fbd493a1f15ad15e2cef0f3ef","parentId":"wrk_e581900c902c479f87387be4f9ee5244","modified":1650499005909,"created":1650499001807,"name":"Base Environment","data":{},"dataPropertyOrder":{},"color":null,"isPrivate":false,"metaSortKey":1650499001807,"_type":"environment"},{"_id":"jar_3fd169d6f3844c7fbd493a1f15ad15e2cef0f3ef","parentId":"wrk_e581900c902c479f87387be4f9ee5244","modified":1650499001809,"created":1650499001809,"name":"Default Jar","cookies":[],"_type":"cookie_jar"},{"_id":"spc_45a98f13f5ac41eaa84afe9dbd672aec","parentId":"wrk_e581900c902c479f87387be4f9ee5244","modified":1650499001791,"created":1650499001791,"fileName":"rocketseat-nlw-06","contents":"","contentType":"yaml","_type":"api_spec"},{"_id":"env_5484415ce8fc4a81b823a139b466a938","parentId":"env_3fd169d6f3844c7fbd493a1f15ad15e2cef0f3ef","modified":1650499063259,"created":1650499008832,"name":"development","data":{"url":"localhost:3000"},"dataPropertyOrder":{"&":["url"]},"color":null,"isPrivate":false,"metaSortKey":1650499008832,"_type":"environment"}]}
+{
+	"_type": "export",
+	"__export_format": 4,
+	"__export_date": "2022-04-21T16:16:30.535Z",
+	"__export_source": "insomnia.desktop.app:v2022.2.1",
+	"resources": [
+		{
+			"_id": "req_fbe014e6961f4294898bb50ea83f58a1",
+			"parentId": "fld_d886db28f2d0420ea8a978df4a41f8db",
+			"modified": 1650557370188,
+			"created": 1650550037991,
+			"url": "{{ _.url }}/{{ _.resource }}",
+			"name": "Login",
+			"description": "",
+			"method": "POST",
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"email\": \"dani.leao89@gmail.com\",\n\t\"password\": \"123\"\n}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json",
+					"id": "pair_403b8c28d65042a5b6f28ebff7ab59c6"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": 0,
+			"isPrivate": false,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingFollowRedirects": "global",
+			"_type": "request"
+		},
+		{
+			"_id": "fld_d886db28f2d0420ea8a978df4a41f8db",
+			"parentId": "wrk_e581900c902c479f87387be4f9ee5244",
+			"modified": 1650557370178,
+			"created": 1650550100020,
+			"name": "Authentication",
+			"description": "",
+			"environment": { "resource": "login" },
+			"environmentPropertyOrder": { "&": ["resource"] },
+			"metaSortKey": 0,
+			"_type": "request_group"
+		},
+		{
+			"_id": "wrk_e581900c902c479f87387be4f9ee5244",
+			"parentId": null,
+			"modified": 1650499001745,
+			"created": 1650499001745,
+			"name": "rocketseat-nlw-06",
+			"description": "",
+			"scope": "collection",
+			"_type": "workspace"
+		},
+		{
+			"_id": "req_f379848ee08143cfad30ae070122a1e3",
+			"parentId": "fld_0616a72d512e4f2094d031e6adffb78f",
+			"modified": 1650557370188,
+			"created": 1650556700398,
+			"url": "{{ _.url }}/{{ _.resource }}",
+			"name": "Create Compiment",
+			"description": "",
+			"method": "POST",
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"tag_id\": \"98ce71b9-68f6-4716-bbfe-66c9ffb69618\",\n\t\"user_sender\": \"b1fe9e57-65b0-41b0-b46e-9ba84171542a\",\n\t\"user_receiver\": \"b1fe9e57-65b0-41b0-b46e-9ba841715421\",\n\t\"message\": \"Thanks for the help in the community :)\"\n}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json",
+					"id": "pair_f67e8919c70c4d528f9daccbb4a3da3a"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": 0,
+			"isPrivate": false,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingFollowRedirects": "global",
+			"_type": "request"
+		},
+		{
+			"_id": "fld_0616a72d512e4f2094d031e6adffb78f",
+			"parentId": "wrk_e581900c902c479f87387be4f9ee5244",
+			"modified": 1650557370178,
+			"created": 1650556676173,
+			"name": "Compliments",
+			"description": "",
+			"environment": { "resource": "compliments" },
+			"environmentPropertyOrder": { "&": ["resource"] },
+			"metaSortKey": 100,
+			"_type": "request_group"
+		},
+		{
+			"_id": "req_fef3f7ee883f4bcbb27abbaa3cff92b3",
+			"parentId": "fld_58a0e85b2f2a46449178ee93d4e5f829",
+			"modified": 1650557370189,
+			"created": 1650535114812,
+			"url": "{{ _.url }}/{{ _.resource }}",
+			"name": "Create Tag",
+			"description": "",
+			"method": "POST",
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"name\": \"leadership\"\n}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json",
+					"id": "pair_7ff777a5c2a0460582364447dd31313e"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": 0,
+			"isPrivate": false,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingFollowRedirects": "global",
+			"_type": "request"
+		},
+		{
+			"_id": "fld_58a0e85b2f2a46449178ee93d4e5f829",
+			"parentId": "wrk_e581900c902c479f87387be4f9ee5244",
+			"modified": 1650557370178,
+			"created": 1650535096138,
+			"name": "Tags",
+			"description": "",
+			"environment": { "resource": "tags" },
+			"environmentPropertyOrder": { "&": ["resource"] },
+			"metaSortKey": 200,
+			"_type": "request_group"
+		},
+		{
+			"_id": "req_ecf83b4818c14346b6bf11546675568a",
+			"parentId": "fld_1ae4fbf4887945859efa8455061122f5",
+			"modified": 1650557545306,
+			"created": 1650509320692,
+			"url": "{{ _.url }}/{{ _.resource }}",
+			"name": "Create User",
+			"description": "",
+			"method": "POST",
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"name\": \"Nati\",\n\t\"email\": \"nati@mail.com\",\n\t\"password\": \"123\"\n}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json",
+					"id": "pair_83701c3b6d5b488a95af4aa68227f708"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": 0,
+			"isPrivate": false,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingFollowRedirects": "global",
+			"_type": "request"
+		},
+		{
+			"_id": "fld_1ae4fbf4887945859efa8455061122f5",
+			"parentId": "wrk_e581900c902c479f87387be4f9ee5244",
+			"modified": 1650557370178,
+			"created": 1650509227442,
+			"name": "Users",
+			"description": "",
+			"environment": { "resource": "users" },
+			"environmentPropertyOrder": { "&": ["resource"] },
+			"metaSortKey": 300,
+			"_type": "request_group"
+		},
+		{
+			"_id": "env_3fd169d6f3844c7fbd493a1f15ad15e2cef0f3ef",
+			"parentId": "wrk_e581900c902c479f87387be4f9ee5244",
+			"modified": 1650499005909,
+			"created": 1650499001807,
+			"name": "Base Environment",
+			"data": {},
+			"dataPropertyOrder": {},
+			"color": null,
+			"isPrivate": false,
+			"metaSortKey": 1650499001807,
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_3fd169d6f3844c7fbd493a1f15ad15e2cef0f3ef",
+			"parentId": "wrk_e581900c902c479f87387be4f9ee5244",
+			"modified": 1650499001809,
+			"created": 1650499001809,
+			"name": "Default Jar",
+			"cookies": [],
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "spc_45a98f13f5ac41eaa84afe9dbd672aec",
+			"parentId": "wrk_e581900c902c479f87387be4f9ee5244",
+			"modified": 1650499001791,
+			"created": 1650499001791,
+			"fileName": "rocketseat-nlw-06",
+			"contents": "",
+			"contentType": "yaml",
+			"_type": "api_spec"
+		},
+		{
+			"_id": "env_5484415ce8fc4a81b823a139b466a938",
+			"parentId": "env_3fd169d6f3844c7fbd493a1f15ad15e2cef0f3ef",
+			"modified": 1650499063259,
+			"created": 1650499008832,
+			"name": "development",
+			"data": { "url": "localhost:3000" },
+			"dataPropertyOrder": { "&": ["url"] },
+			"color": null,
+			"isPrivate": false,
+			"metaSortKey": 1650499008832,
+			"_type": "environment"
+		}
+	]
+}

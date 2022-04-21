@@ -1,8 +1,9 @@
-import { CreateComplimentController } from "@controllers";
-import { Router } from "express";
+import { Router } from 'express';
+
+import { CreateComplimentController } from '@controllers';
 
 const ComplimentsRouter = Router();
 
-ComplimentsRouter.post("/", new CreateComplimentController().handle);
+ComplimentsRouter.post('/', new CreateComplimentController().handle);
 
 export { ComplimentsRouter };

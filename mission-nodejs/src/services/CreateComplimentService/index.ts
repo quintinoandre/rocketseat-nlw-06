@@ -1,36 +1,38 @@
-import { ComplimentsRepository, UsersRepository } from "@repositories";
-import { getCustomRepository } from "typeorm";
-import { IComplimentRequest } from "./types";
+import { getCustomRepository } from 'typeorm';
+
+import { ComplimentsRepository, UsersRepository } from '@repositories';
+
+import { IComplimentRequest } from './types';
 
 class CreateComplimentService {
-  async execute({
-    tag_id,
-    user_sender,
-    user_receiver,
-    message,
-  }: IComplimentRequest) {
-    const complimentsRepository = getCustomRepository(ComplimentsRepository);
+	async execute({
+		tag_id,
+		user_sender,
+		user_receiver,
+		message,
+	}: IComplimentRequest) {
+		const complimentsRepository = getCustomRepository(ComplimentsRepository);
 
-    const usersRepository = getCustomRepository(UsersRepository);
+		const usersRepository = getCustomRepository(UsersRepository);
 
-    if (user_sender === user_receiver)
-      throw new Error("You can't send a compliment to yourself");
+		if (user_sender === user_receiver)
+			throw new Error("You can't send a compliment to yourself");
 
-    const userReceiverExists = await usersRepository.findOne(user_receiver);
+		const userReceiverExists = await usersRepository.findOne(user_receiver);
 
-    if (!userReceiverExists) throw new Error("User receiver doesn't exists");
+		if (!userReceiverExists) throw new Error("User receiver doesn't exists");
 
-    const compliment = complimentsRepository.create({
-      tag_id,
-      user_receiver,
-      user_sender,
-      message,
-    });
+		const compliment = complimentsRepository.create({
+			tag_id,
+			user_receiver,
+			user_sender,
+			message,
+		});
 
-    await complimentsRepository.save(compliment);
+		await complimentsRepository.save(compliment);
 
-    return compliment;
-  }
+		return compliment;
+	}
 }
 
 export { CreateComplimentService };

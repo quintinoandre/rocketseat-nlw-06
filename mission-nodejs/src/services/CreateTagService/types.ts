@@ -1,5 +1,5 @@
 interface ITagRequest {
-  name: string;
+	name: string;
 }
 
 export { ITagRequest };

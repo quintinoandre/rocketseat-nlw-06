@@ -1,3 +1,4 @@
+import { Expose } from 'class-transformer';
 import {
 	Column,
 	CreateDateColumn,
@@ -24,6 +25,11 @@ class TagEntity {
 
 	@UpdateDateColumn()
 	updated_at: Date;
+
+	@Expose({ name: 'name_custom' })
+	nameCustom(): string {
+		return `#${this.name}`;
+	}
 }
 
 export { TagEntity };

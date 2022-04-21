@@ -1,9 +1,10 @@
 {
 	"compilerOptions": {
-		"target": "es5",
+		"target": "es2021",
 		"module": "commonjs",
 		"strict": false,
 		"strictPropertyInitialization": false,
+		"typeRoots": ["src/@types"],
 		"esModuleInterop": true,
 		"experimentalDecorators": true,
 		"emitDecoratorMetadata": true,

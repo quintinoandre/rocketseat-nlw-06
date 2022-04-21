@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "strict": false,
+    "strictPropertyInitialization": false,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@controllers": ["src/controllers"],
+      "@entities": ["src/entities"],
+      "@repositories": ["src/repositories"],
+      "@routers": ["src/routers"],
+      "@services": ["src/services"]
+    }
+  }
+}
